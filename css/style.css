@@ -1,0 +1,121 @@
+	*,
+	*:before,
+	*:after {
+	  box-sizing: border-box;
+	}
+
+	canvas {
+		position:absolute;
+	}
+	#can {
+	  background-image: url(../assets/images/newthumbs.jpg);
+	  display: none; 
+	  z-index: 100;
+	}
+
+	#newcanvas {
+		display: none;
+		z-index: 105;
+	}
+
+	body {
+    overflow:hidden;
+    background-image: url(../assets/images/smalldirt.png);
+	}
+
+	.screens {
+	  position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	  display: none;
+	  font-family: Arial Black, Verdana, Times, serif, "Times New Roman";
+	  z-index: 100;
+	  color: white;
+	  font-weight: bold;
+	  text-align:center;
+	}
+
+	.words {
+		display:none;
+		position: fixed;
+		font-family: Arial Black, Verdana, Times, serif, "Times New Roman";
+		font-weight: bold;
+		color: white;
+	}
+
+	.text {
+		-moz-user-select: -moz-none;
+		-o-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	 	z-index: 108;		
+	}
+
+	#soundcontrol {
+		bottom: 1.25rem; 
+		left: 1.25rem;
+	}
+
+	#music{
+		bottom: 1.25rem; 
+		right: 1.25rem;
+		opacity: 0.5;
+	}
+
+	#rel {
+		top: 1.25rem; 
+		right: 1.25rem;
+	}
+
+	#menu {
+		display: none;
+		position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-family: Arial Black, Verdana, Times, serif, "Times New Roman";
+  	color: white;
+		font-weight: bold;
+		text-align:center;
+		padding: 1rem;
+	}
+
+	#life {
+		top: 1.25rem; 
+		left: 1.25rem;
+	}
+
+	.menu-div {
+		border : 1px solid white;
+		padding: 1rem;
+		margin-top: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		border-radius: 5%;
+	}
+
+	.menu-div:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+
+
+
