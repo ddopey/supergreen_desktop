@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Super Green</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <canvas id="can"></canvas>
+    <canvas id="newcanvas"></canvas>
+    <div id="startscreen" class="screens text">CLICK TO START!</div>
+    <div id="winscreen" class="screens text">WELL DONE!</div>
+    <div id="soundcontrol" class="words text">SOUNDS</div>
+    <div id="music" class="words text">MUSIC</div>
+    <div id="rel" class="words text">MENU</div>
+    <div id="life" class="words text">LIFE: 100%</div>
+    <div id="winner" class="screens text">YOU WIN!</div>
+    <div id="gamename" class="screens text">SUPER GREEN</div>
+    <div id="menu">
+      <div id="start" class="menu-div text">PLAY</div>
+      <div id="easy" class="menu-div text">EASY</div>
+      <div id="hard" class="menu-div text">HARD</div>
+      <div id="reld" class="menu-div text">RELOAD</div>
+      <div id="reset" class="menu-div text">RESET</div>
+    </div>
+    <script src="maps/map1.js"></script>
+    <script src="js/images.js"></script>
+    <script src="js/portals.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/gamesimplified.js"></script>
+    <audio id="hitthebrick">
+    	<source src="assets/sounds/nopoints.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="door">
+    	<source src="assets/sounds/tadah.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound" loop>
+      <source src="assets/sounds/backgroundmusic.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="pain" loop>
+    	<source src="assets/sounds/shortpainsound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="portalsound">
+      <source src="assets/sounds/port1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="boxexplosion">
+      <source src="assets/sounds/boxexplosion.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameover">
+      <source src="assets/sounds/gameover.mp3" type="audio/wav">
+    </audio>
+    <audio id="explmonster">
+      <source src="assets/sounds/explmonster.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="failopendoor">
+      <source src="assets/sounds/failopendoor_short.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="keycollected">
+      <source src="assets/sounds/key_collected_short.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>
